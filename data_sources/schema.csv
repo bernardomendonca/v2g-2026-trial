@@ -1,0 +1,27 @@
+Column,Type,Description
+dateTime,datetime,Local Melbourne timestamp (AEDT/AEST)
+systemId,str,Charger serial number
+charger_kw,float,"Charger power kW (+ve=charge, -ve=discharge)"
+charger_status,str,Available/Charging/SuspendedEV/Idle
+soc_percent,int,Battery state of charge %
+grid_kw,float,"Grid power kW (+ve=import, -ve=export)"
+solar_kw,float,Solar generation kW
+consumption_kw,float,Household consumption kW
+v2g_kw,float,V2G export to grid kW
+v2h_kw,float,V2H to home kW
+g2v_kw,float,Grid to vehicle kW
+h2v_kw,float,Home/solar to vehicle kW
+import_price_kwh,float,Import price c/kWh
+export_price_kwh,float,Export price c/kWh
+command,str,selfConsume/charge/discharge/idle/preserve
+daemon_type,str,manual/EnergyOptimiserDaemon
+is_smart_charge,bool,Automated mode enabled
+strategy_reason,str,Decision reason
+target_soc,int,Target SoC %
+car_required_by,str,User departure time
+ev_battery_kwh,int,EV battery capacity kWh
+max_charge_kw,float,Max charge power kW
+max_discharge_kw,float,Max discharge power kW
+min_soc,int,Min SoC limit %
+max_soc,int,Max SoC limit %
+battery_degradation_cost,float,Degradation $/kWh
